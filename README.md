@@ -26,16 +26,17 @@ Prerequisites
 
 Project Structure:
 
-/src
-Contains the main code files for the application.
+/src:
+ Contains the main code files for the application.
 
-components/
-Contains React components for entries, forms, and graphs.
+components/:
+ Contains React components for entries, forms, and graphs.
 
-utils/
-Utility functions, including sentiment analysis setup and helper functions for date and trend calculations.
+utils/:
+ Utility functions, including sentiment analysis setup and helper functions for date and trend calculations.
 
-Usage
+Usage:
+
 1.Adding an Entry
 Navigate to the entry section and click on "Save Entry" to write your journal entry for the day.
 
@@ -45,7 +46,7 @@ Once you submit an entry, the sentiment analysis module automatically analyzes i
 3.Viewing Mood Trends
 Go to the "Mood Trends" section to see graphical representations of your mood over time, with options to filter by weeks, months, or custom date ranges.
 
-Implementation Details
+Implementation Details:
 
 1. Sentiment Analysis
   The application uses Sentiment.js to calculate an initial sentiment score for each entry. The NLP module parses each word to determine an overall sentiment     (   (positive, neutral, or negative).
