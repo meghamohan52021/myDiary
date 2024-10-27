@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+Personal Diary with Sentiment Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
+This Personal Diary is a web application that allows users to document their daily experiences and moods. Each journal entry undergoes sentiment analysis to detect the overall mood of the text (positive, neutral, or negative), giving users valuable insights into their emotional well-being over time. Users can view their mood trends through graphical representations, helping them track their mental health journey week by week or month by month.
 
-## Available Scripts
+Features
+1. Journal Management
+   Users can add new journal entries, edit existing ones, and delete entries as needed.
+2. Sentiment Analysis
+   Each entry is analyzed for sentiment (positive, neutral, negative) using NLP (Natural Language Processing). This provides users with an immediate sense of the      overall mood of their writing.
+3. Mood Trend Visualization
+   Users can view their mood trends over weeks and months using graphs, allowing for an overview of emotional patterns over time.
 
-In the project directory, you can run:
+Tech Stack
+Frontend
+1. HTML/CSS: For layout and styling of the application.
+2. React.js: For managing the user interface and providing a smooth user experience.
+Backend
+1. JavaScript (Node.js): Used for sentiment analysis and backend processing.
+2. NLP Library (Sentiment.js): For analyzing the sentiment of each journal entry and categorizing it as positive, neutral, or negative.
 
-### `npm start`
+Setup and Installation
+Prerequisites
+1. Node.js and npm installed on your system.
+2. Knowledge of React.js and basic JavaScript for frontend development.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Project Structure:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+/src
+Contains the main code files for the application.
 
-### `npm test`
+components/
+Contains React components for entries, forms, and graphs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+utils/
+Utility functions, including sentiment analysis setup and helper functions for date and trend calculations.
 
-### `npm run build`
+Usage
+1.Adding an Entry
+Navigate to the entry section and click on "Save Entry" to write your journal entry for the day.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Sentiment Analysis
+Once you submit an entry, the sentiment analysis module automatically analyzes it and assigns a mood (positive, neutral, or negative). You can view or delete your previous entries by clickinf on "View Entries".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.Viewing Mood Trends
+Go to the "Mood Trends" section to see graphical representations of your mood over time, with options to filter by weeks, months, or custom date ranges.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implementation Details
 
-### `npm run eject`
+1. Sentiment Analysis
+  The application uses Sentiment.js to calculate an initial sentiment score for each entry. The NLP module parses each word to determine an overall sentiment     (   (positive, neutral, or negative).
+  Manual Adjustments: 
+  Users can manually influence the sentiment score by specifying keywords or phrases that they feel strongly affect their mood. This custom vocabulary is used to     modify the automatic sentiment calculation, resulting in a more personalized sentiment score.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.Trend Visualization
+Trend data is calculated and visualized using a JavaScript graphing library (Chart.js).
+Mood trends are displayed over time, helping users identify patterns in their mood.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Future Enhancements
+Exporting Entries: Allow users to export entries and sentiment data in a format of their choice (e.g., PDF, CSV).
+User Authentication: Integrate login and signup functionality for privacy and personalized experience.
+Advanced Sentiment Analysis: Implement a more sophisticated NLP model to capture complex emotions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowledgments
+Special thanks to the creators of Sentiment.js and Chart.js for providing essential tools for sentiment analysis and data visualization.
