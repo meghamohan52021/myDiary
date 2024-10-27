@@ -4,6 +4,7 @@ Project Overview
 This Personal Diary is a web application that allows users to document their daily experiences and moods. Each journal entry undergoes sentiment analysis to detect the overall mood of the text (positive, neutral, or negative), giving users valuable insights into their emotional well-being over time. Users can view their mood trends through graphical representations, helping them track their mental health journey week by week or month by month.
 
 Features
+
 1. Journal Management
    Users can add new journal entries, edit existing ones, and delete entries as needed.
 2. Sentiment Analysis
@@ -41,7 +42,7 @@ Usage:
 Navigate to the entry section and click on "Save Entry" to write your journal entry for the day.
 
 2. Sentiment Analysis
-Once you submit an entry, the sentiment analysis module automatically analyzes it and assigns a mood (positive, neutral, or negative). You can view or delete your previous entries by clickinf on "View Entries".
+Once you submit an entry, the sentiment analysis module automatically analyzes it and assigns a mood (positive, neutral, or negative). You can view or delete    your previous entries by clickinf on "View Entries".
 
 3.Viewing Mood Trends
 Go to the "Mood Trends" section to see graphical representations of your mood over time, with options to filter by weeks, months, or custom date ranges.
@@ -58,8 +59,11 @@ Trend data is calculated and visualized using a JavaScript graphing library (Cha
 Mood trends are displayed over time, helping users identify patterns in their mood.
 
 Future Enhancements
+
 Exporting Entries: Allow users to export entries and sentiment data in a format of their choice (e.g., PDF, CSV).
+
 User Authentication: Integrate login and signup functionality for privacy and personalized experience.
+
 Advanced Sentiment Analysis: Implement a more sophisticated NLP model to capture complex emotions.
 
 License
